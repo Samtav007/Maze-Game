@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+*{
+    font-family: Nunito;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image:url(https://png.pngtree.com/thumb_back/fh260/background/20230526/pngtree-image-of-a-3d-maze-with-burning-red-colored-areas-image_2652487.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+
+h1{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    box-sizing: border-box;
+    animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+
+.main_block{
+    box-sizing: border-box;
+    align-self: center;
+    background-color: white;
+    padding: 20px;
+    margin-left: 490px;
+    margin-right: 500px;
+    margin-top: 100px;
+    border-radius: 40px;
+    width: 500px;
+    height: 300px;
+    font-size: larger;
+    font-weight: 500;
+    box-shadow: 7px 7px 2px 2px rgb(80, 137, 212)
+}
+
+.main_block:hover{
+    cursor:progress;
+    transition-duration: 0.8s;
+    transform: scale(1.05);
+    box-shadow: 7px 7px 2px 2px #db7082;
+}
+
+#next{
+    cursor: pointer;
+    background-color: white;
+    border-style: hidden;
+    /* margin: 20px; */
+    /* margin-left: 150px; */
+    padding: 10px;
+    font-size: medium;
+    font-weight: bolder;
+    border-radius: 80px;
+    position: absolute;
+    border: 2px solid pink;
+}
+
+#next:hover{
+    cursor: pointer;
+    border: 0px;
+    transform: scale(1.1);
+    transition-duration: 1s;
+    background-image: radial-gradient(rgba(175, 228, 214, 0.527), rgba(255, 192, 203, 0.527));
+}
+
+#nextdiv{
+    display: flex;
+    justify-content: center;
+}
+@media(max-width:500px){
+    #container{
+        display: none;
+    }
+    .rotate{
+        display: block;
+        font-size: 50px;
+        color: #fff;
+    }
+}

@@ -1,0 +1,111 @@
+  body {
+
+    background-image:url(https://png.pngtree.com/thumb_back/fh260/background/20230526/pngtree-image-of-a-3d-maze-with-burning-red-colored-areas-image_2652487.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#maze-container {
+    display: grid;
+    grid-template-columns: repeat(10, 40px); /* Adjust the number of columns as needed */
+    gap: 1px;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  .player {
+    background-color: green;
+  }
+
+  #maze-container {
+    display: grid;
+    grid-template-columns: repeat(10, 40px); /* Adjust the number of columns as needed */
+    gap: 1px;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(242, 19, 19);
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  .wall {
+    background-color: rgb(0, 0, 0); /* Set the background color for walls */
+  }
+  
+  .player {
+    background-color: green;
+  }
+  
+  .exit {
+    background-color: red; /* Set the background color for the exit */
+  }
+
+  #timer{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    text-align: left;
+    text-transform: uppercase;
+    text-align-last: left;
+}
+
+
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    background: #cce5ff ;
+    border: 1px solid #b8daff;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+
+
+.time_text{
+    font-weight: 400;
+    font-size: 18px;
+    user-select: none;
+}
+
+
+#countdown{
+    font-size: 18px;
+    font-weight: 500;
+    background: #57708a;
+    height: 30px;
+    width: 45px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(38, 36, 36);
+    user-select: none;
+}
+@media(max-width:500px){
+  #container{
+      display: none;
+  }
+  .rotate{
+      display: block;
+      font-size: 50px;
+      color: #fff;
+  }
+}

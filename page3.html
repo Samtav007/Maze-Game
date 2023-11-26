@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="rotate">
+        rotate your phone
+    </div>
+    <div id="container">
+    <div id="h1">
+        <h1>GAME OVER</h1>
+    </div>
+        <div class="main_block">
+            <span id="playerName"></span>
+            <span id="phrases"></span>
+            <h1>Your Score: <span id="userScore">0</span></h1>
+            <a href="index.html">
+                <button id="start_button">
+                PLAY AGAIN
+                </button>
+            </a>
+            
+        </div>
+        <div id="container"></div>
+
+        
+        <script>
+            const playerName = localStorage.getItem('nickname')
+            document.getElementById('playerName').innerHTML = playerName
+            let scoreBoard=document.getElementById('userScore')
+            let userScore=localStorage.getItem('userScore')
+            scoreBoard.innerHTML=userScore
+
+
+
+            let phrases = [
+    "Congratualation you Won!",
+    "King is back",
+    "Congo you Won",
+    
+    
+];
+const randomIndex = Math.floor(Math.random() * phrases.length);
+const randomPhrase = phrases[randomIndex]; 
+console.log(randomPhrase)
+
+let phrasesLine=document.getElementById('phrases')
+
+let arrey =  [
+"Sorry you lost!",
+    "Better luck next time",
+    "Try once more",
+]
+const randomPhrase2 = arrey[randomIndex]; 
+console.log(userScore,userScore==100)
+if (userScore==100){
+    phrasesLine.innerHTML=randomPhrase
+}else{
+    phrasesLine.innerHTML=randomPhrase2
+}
+
+
+        </script>
+</body>
+</html>
